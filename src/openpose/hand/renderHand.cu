@@ -35,7 +35,7 @@ namespace op
         const auto numberPartPairs = sizeof(PART_PAIRS_GPU) / (2*sizeof(PART_PAIRS_GPU[0]));
         const auto numberScales = sizeof(SCALES) / sizeof(SCALES[0]);
         const auto numberColors = 1;
-        const auto radius = fastMinCuda(targetWidth, targetHeight) / 80.f;
+        const auto radius = fastMinCuda(targetWidth, targetHeight) / 50.f;
         const auto lineWidth = fastMinCuda(targetWidth, targetHeight) / 40.f;
 
         // Render key points

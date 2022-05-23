@@ -83,9 +83,9 @@ namespace op
         if (x < targetWidth && y < targetHeight)
         {
             const unsigned long baseIndex = 3u*(y * (unsigned long)targetWidth + x);
-            float b = targetPtr[baseIndex];
-            float g = targetPtr[baseIndex+1];
-            float r = targetPtr[baseIndex+2];
+            float b = 255.f;
+            float g = 255.f;
+            float r = 255.f;
             if (!blendOriginalFrame)
             {
                 b = 0.f;
@@ -184,7 +184,7 @@ namespace op
                                             for (auto& color : colorToAdd)
                                                 color = {0.f};
                                     }
-                                    const auto alphaColorToAdd = 0.9f;
+                                    const auto alphaColorToAdd = 1.0f;
                                     addColorWeighted(r, g, b, colorToAdd, alphaColorToAdd);
                                 }
                             }
@@ -264,9 +264,9 @@ namespace op
         if (x < targetWidth && y < targetHeight)
         {
             const unsigned long baseIndex = 3u*(y * (unsigned long)targetWidth + x);
-            float b = targetPtr[baseIndex];
-            float g = targetPtr[baseIndex+1];
-            float r = targetPtr[baseIndex+2];
+            float b = 255.f;
+            float g = 255.f;
+            float r = 255.f;
             if (!blendOriginalFrame)
             {
                 b = 0.f;
@@ -361,7 +361,7 @@ namespace op
                                             for (auto& color : colorToAdd)
                                                 color = {0.f};
                                     }
-                                    const auto alphaColorToAdd = 0.9f;
+                                    const auto alphaColorToAdd = 1.0f;
                                     addColorWeighted(r, g, b, colorToAdd, alphaColorToAdd);
                                 }
                             }
