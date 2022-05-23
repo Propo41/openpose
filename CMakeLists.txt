@@ -301,10 +301,10 @@ set_property(CACHE WITH_EIGEN PROPERTY STRINGS NONE AUTOBUILD FIND)
 # endif (UNIX AND NOT APPLE)
 
 # Download the models
-#option(DOWNLOAD_BODY_25_MODEL "Download body 25-keypoint (body COCO and 6-keypoint foot) model." ON)
-#option(DOWNLOAD_BODY_COCO_MODEL "Download body 18-keypoint COCO model." OFF)
-#option(DOWNLOAD_BODY_MPI_MODEL "Download body 15-keypoint MPI model." OFF)
-#option(DOWNLOAD_FACE_MODEL "Download face model." ON)
+option(DOWNLOAD_BODY_25_MODEL "Download body 25-keypoint (body COCO and 6-keypoint foot) model." ON)
+option(DOWNLOAD_BODY_COCO_MODEL "Download body 18-keypoint COCO model." OFF)
+option(DOWNLOAD_BODY_MPI_MODEL "Download body 15-keypoint MPI model." OFF)
+option(DOWNLOAD_FACE_MODEL "Download face model." ON)
 option(DOWNLOAD_HAND_MODEL "Download hand model." ON)
 
 # Asio
