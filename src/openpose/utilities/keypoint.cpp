@@ -200,7 +200,7 @@ namespace op
                 // Parameters
                 const auto lineType = 8;
                 const auto shift = 0;
-                const auto numberColors = colors.size();
+                const auto numberColors = 1;
                 const auto numberScales = poseScales.size();
                 const auto thresholdRectangle = T(0.1);
                 const auto numberKeypoints = keypoints.getSize(1);
@@ -221,7 +221,7 @@ namespace op
                         const auto thicknessCircle = fastMax(1, (ratioAreas > T(0.05) ? thicknessRatio : -1));
                         const auto thicknessLine = fastMax(
                             1, positiveIntRound(thicknessRatio * thicknessLineRatioWRTCircle));
-                        const auto radius = thicknessRatio / 2;
+                        const auto radius = thicknessRatio / 1.5;
 
                         // Draw lines
                         for (auto pair = 0u ; pair < pairs.size() ; pair+=2)
