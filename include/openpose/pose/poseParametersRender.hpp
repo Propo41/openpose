@@ -7,7 +7,7 @@
 namespace op
 {
     // Rendering parameters
-    const auto POSE_DEFAULT_ALPHA_KEYPOINT = 0.6f;
+    const auto POSE_DEFAULT_ALPHA_KEYPOINT = 1.6f;
     const auto POSE_DEFAULT_ALPHA_HEAT_MAP = 0.7f;
 
     // Model-Dependent Parameters

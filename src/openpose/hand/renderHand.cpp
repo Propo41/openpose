@@ -12,7 +12,7 @@ namespace op
         {
             // Parameters
             const auto thicknessCircleRatio = 1.f/50.f;
-            const auto thicknessLineRatioWRTCircle = 0.75f;
+            const auto thicknessLineRatioWRTCircle = 1.75f;
             const auto& pairs = HAND_PAIRS_RENDER;
             const auto& scales = HAND_SCALES_RENDER;
             // Render keypoints
